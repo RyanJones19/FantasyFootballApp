@@ -7,13 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94035E6C1DCC538000EC3568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94035E6B1DCC538000EC3568 /* ViewController.swift */; };
+		94035E6E1DCC5A2E00EC3568 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94035E6D1DCC5A2E00EC3568 /* Images.xcassets */; };
 		94375DB51DC93C00002638F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375DB41DC93C00002638F2 /* AppDelegate.swift */; };
-		94375DB71DC93C00002638F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375DB61DC93C00002638F2 /* ViewController.swift */; };
+		94375DB71DC93C00002638F2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375DB61DC93C00002638F2 /* HomePageViewController.swift */; };
 		94375DBA1DC93C00002638F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94375DB81DC93C00002638F2 /* Main.storyboard */; };
 		94375DBC1DC93C00002638F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94375DBB1DC93C00002638F2 /* Assets.xcassets */; };
 		94375DBF1DC93C00002638F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94375DBD1DC93C00002638F2 /* LaunchScreen.storyboard */; };
 		94375DCA1DC93C01002638F2 /* FantasyFootballAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375DC91DC93C01002638F2 /* FantasyFootballAppTests.swift */; };
 		94375DD51DC93C02002638F2 /* FantasyFootballAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375DD41DC93C02002638F2 /* FantasyFootballAppUITests.swift */; };
+		94375DE31DC93C19002638F2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94375DE21DC93C19002638F2 /* Security.framework */; };
+		94375DE51DC93C21002638F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94375DE41DC93C21002638F2 /* SystemConfiguration.framework */; };
+		94375E431DC94A3D002638F2 /* GTLRPlayersObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E3E1DC94A3D002638F2 /* GTLRPlayersObjects.m */; };
+		94375E441DC94A3D002638F2 /* GTLRPlayersQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E401DC94A3D002638F2 /* GTLRPlayersQuery.m */; };
+		94375E451DC94A3D002638F2 /* GTLRPlayersService.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E421DC94A3D002638F2 /* GTLRPlayersService.m */; };
+		94375E8C1DC94D0E002638F2 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E7D1DC94D0E002638F2 /* GTMGatherInputStream.m */; };
+		94375E8D1DC94D0E002638F2 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E7F1DC94D0E002638F2 /* GTMMIMEDocument.m */; };
+		94375E8E1DC94D0E002638F2 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E811DC94D0E002638F2 /* GTMReadMonitorInputStream.m */; };
+		94375E8F1DC94D0E002638F2 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E831DC94D0E002638F2 /* GTMSessionFetcher.m */; };
+		94375E901DC94D0E002638F2 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E851DC94D0E002638F2 /* GTMSessionFetcherLogging.m */; };
+		94375E911DC94D0E002638F2 /* GTMSessionFetcherLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E871DC94D0E002638F2 /* GTMSessionFetcherLogViewController.m */; };
+		94375E921DC94D0E002638F2 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E891DC94D0E002638F2 /* GTMSessionFetcherService.m */; };
+		94375E931DC94D0E002638F2 /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E8B1DC94D0E002638F2 /* GTMSessionUploadFetcher.m */; };
+		94375EB81DC94D23002638F2 /* GTLRTestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E961DC94D23002638F2 /* GTLRTestObjects.m */; };
+		94375EB91DC94D23002638F2 /* GTLRTestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E981DC94D23002638F2 /* GTLRTestQuery.m */; };
+		94375EBA1DC94D23002638F2 /* GTLRTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E9A1DC94D23002638F2 /* GTLRTestService.m */; };
+		94375EBB1DC94D23002638F2 /* GTLRBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E9D1DC94D23002638F2 /* GTLRBatchQuery.m */; };
+		94375EBC1DC94D23002638F2 /* GTLRBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375E9F1DC94D23002638F2 /* GTLRBatchResult.m */; };
+		94375EBD1DC94D23002638F2 /* GTLRDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EA11DC94D23002638F2 /* GTLRDateTime.m */; };
+		94375EBE1DC94D23002638F2 /* GTLRDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EA31DC94D23002638F2 /* GTLRDuration.m */; };
+		94375EBF1DC94D23002638F2 /* GTLRErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EA51DC94D23002638F2 /* GTLRErrorObject.m */; };
+		94375EC01DC94D23002638F2 /* GTLRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EA71DC94D23002638F2 /* GTLRObject.m */; };
+		94375EC11DC94D23002638F2 /* GTLRQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EA91DC94D23002638F2 /* GTLRQuery.m */; };
+		94375EC21DC94D23002638F2 /* GTLRRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EAB1DC94D23002638F2 /* GTLRRuntimeCommon.m */; };
+		94375EC31DC94D23002638F2 /* GTLRService.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EAD1DC94D23002638F2 /* GTLRService.m */; };
+		94375EC41DC94D23002638F2 /* GTLRUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EAF1DC94D23002638F2 /* GTLRUploadParameters.m */; };
+		94375EC51DC94D23002638F2 /* GTLRBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EB11DC94D23002638F2 /* GTLRBase64.m */; };
+		94375EC61DC94D23002638F2 /* GTLRFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EB31DC94D23002638F2 /* GTLRFramework.m */; };
+		94375EC71DC94D23002638F2 /* GTLRURITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EB51DC94D23002638F2 /* GTLRURITemplate.m */; };
+		94375EC81DC94D23002638F2 /* GTLRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 94375EB71DC94D23002638F2 /* GTLRUtilities.m */; };
+		94375ED61DCA7F1E002638F2 /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375ED51DCA7F1E002638F2 /* PlayersTableViewController.swift */; };
+		94375ED81DCA86BA002638F2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94375ED71DCA86B9002638F2 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94035E6B1DCC538000EC3568 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94035E6D1DCC5A2E00EC3568 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		94375DB11DC93BFF002638F2 /* FantasyFootballApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyFootballApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94375DB41DC93C00002638F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94375DB61DC93C00002638F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94375DB61DC93C00002638F2 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		94375DB91DC93C00002638F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94375DBB1DC93C00002638F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94375DBE1DC93C00002638F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +83,70 @@
 		94375DD01DC93C01002638F2 /* FantasyFootballAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyFootballAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94375DD41DC93C02002638F2 /* FantasyFootballAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyFootballAppUITests.swift; sourceTree = "<group>"; };
 		94375DD61DC93C02002638F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94375DE21DC93C19002638F2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94375DE41DC93C21002638F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94375DE81DC941D9002638F2 /* FantasyFootballApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyFootballApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		94375E3C1DC94A3D002638F2 /* GTLRPlayers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPlayers.h; sourceTree = "<group>"; };
+		94375E3D1DC94A3D002638F2 /* GTLRPlayersObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPlayersObjects.h; sourceTree = "<group>"; };
+		94375E3E1DC94A3D002638F2 /* GTLRPlayersObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPlayersObjects.m; sourceTree = "<group>"; };
+		94375E3F1DC94A3D002638F2 /* GTLRPlayersQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPlayersQuery.h; sourceTree = "<group>"; };
+		94375E401DC94A3D002638F2 /* GTLRPlayersQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPlayersQuery.m; sourceTree = "<group>"; };
+		94375E411DC94A3D002638F2 /* GTLRPlayersService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRPlayersService.h; sourceTree = "<group>"; };
+		94375E421DC94A3D002638F2 /* GTLRPlayersService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRPlayersService.m; sourceTree = "<group>"; };
+		94375E7C1DC94CFE002638F2 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		94375E7D1DC94D0E002638F2 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		94375E7E1DC94D0E002638F2 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		94375E7F1DC94D0E002638F2 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		94375E801DC94D0E002638F2 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		94375E811DC94D0E002638F2 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		94375E821DC94D0E002638F2 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		94375E831DC94D0E002638F2 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		94375E841DC94D0E002638F2 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		94375E851DC94D0E002638F2 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		94375E861DC94D0E002638F2 /* GTMSessionFetcherLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogViewController.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherLogViewController.h; sourceTree = "<group>"; };
+		94375E871DC94D0E002638F2 /* GTMSessionFetcherLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogViewController.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherLogViewController.m; sourceTree = "<group>"; };
+		94375E881DC94D0E002638F2 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		94375E891DC94D0E002638F2 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		94375E8A1DC94D0E002638F2 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		94375E8B1DC94D0E002638F2 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		94375E941DC94D23002638F2 /* GTLRTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRTest.h; path = ../../CS496_fantasy_football_app/GTLRTest.h; sourceTree = "<group>"; };
+		94375E951DC94D23002638F2 /* GTLRTestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRTestObjects.h; path = ../../CS496_fantasy_football_app/GTLRTestObjects.h; sourceTree = "<group>"; };
+		94375E961DC94D23002638F2 /* GTLRTestObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRTestObjects.m; path = ../../CS496_fantasy_football_app/GTLRTestObjects.m; sourceTree = "<group>"; };
+		94375E971DC94D23002638F2 /* GTLRTestQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRTestQuery.h; path = ../../CS496_fantasy_football_app/GTLRTestQuery.h; sourceTree = "<group>"; };
+		94375E981DC94D23002638F2 /* GTLRTestQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRTestQuery.m; path = ../../CS496_fantasy_football_app/GTLRTestQuery.m; sourceTree = "<group>"; };
+		94375E991DC94D23002638F2 /* GTLRTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRTestService.h; path = ../../CS496_fantasy_football_app/GTLRTestService.h; sourceTree = "<group>"; };
+		94375E9A1DC94D23002638F2 /* GTLRTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRTestService.m; path = ../../CS496_fantasy_football_app/GTLRTestService.m; sourceTree = "<group>"; };
+		94375E9B1DC94D23002638F2 /* GTLRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRDefines.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRDefines.h; sourceTree = "<group>"; };
+		94375E9C1DC94D23002638F2 /* GTLRBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRBatchQuery.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBatchQuery.h; sourceTree = "<group>"; };
+		94375E9D1DC94D23002638F2 /* GTLRBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRBatchQuery.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBatchQuery.m; sourceTree = "<group>"; };
+		94375E9E1DC94D23002638F2 /* GTLRBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRBatchResult.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBatchResult.h; sourceTree = "<group>"; };
+		94375E9F1DC94D23002638F2 /* GTLRBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRBatchResult.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBatchResult.m; sourceTree = "<group>"; };
+		94375EA01DC94D23002638F2 /* GTLRDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRDateTime.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRDateTime.h; sourceTree = "<group>"; };
+		94375EA11DC94D23002638F2 /* GTLRDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRDateTime.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRDateTime.m; sourceTree = "<group>"; };
+		94375EA21DC94D23002638F2 /* GTLRDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRDuration.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRDuration.h; sourceTree = "<group>"; };
+		94375EA31DC94D23002638F2 /* GTLRDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRDuration.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRDuration.m; sourceTree = "<group>"; };
+		94375EA41DC94D23002638F2 /* GTLRErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRErrorObject.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRErrorObject.h; sourceTree = "<group>"; };
+		94375EA51DC94D23002638F2 /* GTLRErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRErrorObject.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRErrorObject.m; sourceTree = "<group>"; };
+		94375EA61DC94D23002638F2 /* GTLRObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRObject.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRObject.h; sourceTree = "<group>"; };
+		94375EA71DC94D23002638F2 /* GTLRObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRObject.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRObject.m; sourceTree = "<group>"; };
+		94375EA81DC94D23002638F2 /* GTLRQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRQuery.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRQuery.h; sourceTree = "<group>"; };
+		94375EA91DC94D23002638F2 /* GTLRQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRQuery.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRQuery.m; sourceTree = "<group>"; };
+		94375EAA1DC94D23002638F2 /* GTLRRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRRuntimeCommon.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRRuntimeCommon.h; sourceTree = "<group>"; };
+		94375EAB1DC94D23002638F2 /* GTLRRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRRuntimeCommon.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRRuntimeCommon.m; sourceTree = "<group>"; };
+		94375EAC1DC94D23002638F2 /* GTLRService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRService.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRService.h; sourceTree = "<group>"; };
+		94375EAD1DC94D23002638F2 /* GTLRService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRService.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRService.m; sourceTree = "<group>"; };
+		94375EAE1DC94D23002638F2 /* GTLRUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRUploadParameters.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRUploadParameters.h; sourceTree = "<group>"; };
+		94375EAF1DC94D23002638F2 /* GTLRUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRUploadParameters.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRUploadParameters.m; sourceTree = "<group>"; };
+		94375EB01DC94D23002638F2 /* GTLRBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRBase64.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBase64.h; sourceTree = "<group>"; };
+		94375EB11DC94D23002638F2 /* GTLRBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRBase64.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRBase64.m; sourceTree = "<group>"; };
+		94375EB21DC94D23002638F2 /* GTLRFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRFramework.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRFramework.h; sourceTree = "<group>"; };
+		94375EB31DC94D23002638F2 /* GTLRFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRFramework.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRFramework.m; sourceTree = "<group>"; };
+		94375EB41DC94D23002638F2 /* GTLRURITemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRURITemplate.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRURITemplate.h; sourceTree = "<group>"; };
+		94375EB51DC94D23002638F2 /* GTLRURITemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRURITemplate.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRURITemplate.m; sourceTree = "<group>"; };
+		94375EB61DC94D23002638F2 /* GTLRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRUtilities.h; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRUtilities.h; sourceTree = "<group>"; };
+		94375EB71DC94D23002638F2 /* GTLRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRUtilities.m; path = ../../CS496_fantasy_football_app/CS496_fantasy_football_app/GTLRUtilities.m; sourceTree = "<group>"; };
+		94375ED51DCA7F1E002638F2 /* PlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
+		94375ED71DCA86B9002638F2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94375DE51DC93C21002638F2 /* SystemConfiguration.framework in Frameworks */,
+				94375DE31DC93C19002638F2 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +179,8 @@
 		94375DA81DC93BFF002638F2 = {
 			isa = PBXGroup;
 			children = (
+				94375DE41DC93C21002638F2 /* SystemConfiguration.framework */,
+				94375DE21DC93C19002638F2 /* Security.framework */,
 				94375DB31DC93BFF002638F2 /* FantasyFootballApp */,
 				94375DC81DC93C01002638F2 /* FantasyFootballAppTests */,
 				94375DD31DC93C02002638F2 /* FantasyFootballAppUITests */,
@@ -97,12 +201,19 @@
 		94375DB31DC93BFF002638F2 /* FantasyFootballApp */ = {
 			isa = PBXGroup;
 			children = (
+				94375E7B1DC94CD2002638F2 /* GLTR Client Library */,
+				94375DE71DC93F92002638F2 /* Football API Files */,
 				94375DB41DC93C00002638F2 /* AppDelegate.swift */,
-				94375DB61DC93C00002638F2 /* ViewController.swift */,
+				94375DB61DC93C00002638F2 /* HomePageViewController.swift */,
 				94375DB81DC93C00002638F2 /* Main.storyboard */,
 				94375DBB1DC93C00002638F2 /* Assets.xcassets */,
+				94375DE81DC941D9002638F2 /* FantasyFootballApp-Bridging-Header.h */,
 				94375DBD1DC93C00002638F2 /* LaunchScreen.storyboard */,
 				94375DC01DC93C00002638F2 /* Info.plist */,
+				94375ED51DCA7F1E002638F2 /* PlayersTableViewController.swift */,
+				94375ED71DCA86B9002638F2 /* Player.swift */,
+				94035E6B1DCC538000EC3568 /* ViewController.swift */,
+				94035E6D1DCC5A2E00EC3568 /* Images.xcassets */,
 			);
 			path = FantasyFootballApp;
 			sourceTree = "<group>";
@@ -123,6 +234,79 @@
 				94375DD61DC93C02002638F2 /* Info.plist */,
 			);
 			path = FantasyFootballAppUITests;
+			sourceTree = "<group>";
+		};
+		94375DE71DC93F92002638F2 /* Football API Files */ = {
+			isa = PBXGroup;
+			children = (
+				94375E3C1DC94A3D002638F2 /* GTLRPlayers.h */,
+				94375E3D1DC94A3D002638F2 /* GTLRPlayersObjects.h */,
+				94375E3E1DC94A3D002638F2 /* GTLRPlayersObjects.m */,
+				94375E3F1DC94A3D002638F2 /* GTLRPlayersQuery.h */,
+				94375E401DC94A3D002638F2 /* GTLRPlayersQuery.m */,
+				94375E411DC94A3D002638F2 /* GTLRPlayersService.h */,
+				94375E421DC94A3D002638F2 /* GTLRPlayersService.m */,
+			);
+			name = "Football API Files";
+			sourceTree = "<group>";
+		};
+		94375E7B1DC94CD2002638F2 /* GLTR Client Library */ = {
+			isa = PBXGroup;
+			children = (
+				94375E941DC94D23002638F2 /* GTLRTest.h */,
+				94375E951DC94D23002638F2 /* GTLRTestObjects.h */,
+				94375E961DC94D23002638F2 /* GTLRTestObjects.m */,
+				94375E971DC94D23002638F2 /* GTLRTestQuery.h */,
+				94375E981DC94D23002638F2 /* GTLRTestQuery.m */,
+				94375E991DC94D23002638F2 /* GTLRTestService.h */,
+				94375E9A1DC94D23002638F2 /* GTLRTestService.m */,
+				94375E9B1DC94D23002638F2 /* GTLRDefines.h */,
+				94375E9C1DC94D23002638F2 /* GTLRBatchQuery.h */,
+				94375E9D1DC94D23002638F2 /* GTLRBatchQuery.m */,
+				94375E9E1DC94D23002638F2 /* GTLRBatchResult.h */,
+				94375E9F1DC94D23002638F2 /* GTLRBatchResult.m */,
+				94375EA01DC94D23002638F2 /* GTLRDateTime.h */,
+				94375EA11DC94D23002638F2 /* GTLRDateTime.m */,
+				94375EA21DC94D23002638F2 /* GTLRDuration.h */,
+				94375EA31DC94D23002638F2 /* GTLRDuration.m */,
+				94375EA41DC94D23002638F2 /* GTLRErrorObject.h */,
+				94375EA51DC94D23002638F2 /* GTLRErrorObject.m */,
+				94375EA61DC94D23002638F2 /* GTLRObject.h */,
+				94375EA71DC94D23002638F2 /* GTLRObject.m */,
+				94375EA81DC94D23002638F2 /* GTLRQuery.h */,
+				94375EA91DC94D23002638F2 /* GTLRQuery.m */,
+				94375EAA1DC94D23002638F2 /* GTLRRuntimeCommon.h */,
+				94375EAB1DC94D23002638F2 /* GTLRRuntimeCommon.m */,
+				94375EAC1DC94D23002638F2 /* GTLRService.h */,
+				94375EAD1DC94D23002638F2 /* GTLRService.m */,
+				94375EAE1DC94D23002638F2 /* GTLRUploadParameters.h */,
+				94375EAF1DC94D23002638F2 /* GTLRUploadParameters.m */,
+				94375EB01DC94D23002638F2 /* GTLRBase64.h */,
+				94375EB11DC94D23002638F2 /* GTLRBase64.m */,
+				94375EB21DC94D23002638F2 /* GTLRFramework.h */,
+				94375EB31DC94D23002638F2 /* GTLRFramework.m */,
+				94375EB41DC94D23002638F2 /* GTLRURITemplate.h */,
+				94375EB51DC94D23002638F2 /* GTLRURITemplate.m */,
+				94375EB61DC94D23002638F2 /* GTLRUtilities.h */,
+				94375EB71DC94D23002638F2 /* GTLRUtilities.m */,
+				94375E7C1DC94CFE002638F2 /* GTMGatherInputStream.h */,
+				94375E7D1DC94D0E002638F2 /* GTMGatherInputStream.m */,
+				94375E7E1DC94D0E002638F2 /* GTMMIMEDocument.h */,
+				94375E7F1DC94D0E002638F2 /* GTMMIMEDocument.m */,
+				94375E801DC94D0E002638F2 /* GTMReadMonitorInputStream.h */,
+				94375E811DC94D0E002638F2 /* GTMReadMonitorInputStream.m */,
+				94375E821DC94D0E002638F2 /* GTMSessionFetcher.h */,
+				94375E831DC94D0E002638F2 /* GTMSessionFetcher.m */,
+				94375E841DC94D0E002638F2 /* GTMSessionFetcherLogging.h */,
+				94375E851DC94D0E002638F2 /* GTMSessionFetcherLogging.m */,
+				94375E861DC94D0E002638F2 /* GTMSessionFetcherLogViewController.h */,
+				94375E871DC94D0E002638F2 /* GTMSessionFetcherLogViewController.m */,
+				94375E881DC94D0E002638F2 /* GTMSessionFetcherService.h */,
+				94375E891DC94D0E002638F2 /* GTMSessionFetcherService.m */,
+				94375E8A1DC94D0E002638F2 /* GTMSessionUploadFetcher.h */,
+				94375E8B1DC94D0E002638F2 /* GTMSessionUploadFetcher.m */,
+			);
+			name = "GLTR Client Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,15 +378,18 @@
 					94375DB01DC93BFF002638F2 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CH55738PUK;
+						LastSwiftMigration = 0810;
 					};
 					94375DC41DC93C00002638F2 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CH55738PUK;
+						LastSwiftMigration = 0810;
 						TestTargetID = 94375DB01DC93BFF002638F2;
 					};
 					94375DCF1DC93C01002638F2 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CH55738PUK;
+						LastSwiftMigration = 0810;
 						TestTargetID = 94375DB01DC93BFF002638F2;
 					};
 				};
@@ -233,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94375DBF1DC93C00002638F2 /* LaunchScreen.storyboard in Resources */,
+				94035E6E1DCC5A2E00EC3568 /* Images.xcassets in Resources */,
 				94375DBC1DC93C00002638F2 /* Assets.xcassets in Resources */,
 				94375DBA1DC93C00002638F2 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +447,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94375DB71DC93C00002638F2 /* ViewController.swift in Sources */,
+				94375EBE1DC94D23002638F2 /* GTLRDuration.m in Sources */,
+				94375EC81DC94D23002638F2 /* GTLRUtilities.m in Sources */,
+				94375E451DC94A3D002638F2 /* GTLRPlayersService.m in Sources */,
+				94375E901DC94D0E002638F2 /* GTMSessionFetcherLogging.m in Sources */,
+				94375EBF1DC94D23002638F2 /* GTLRErrorObject.m in Sources */,
+				94375E8D1DC94D0E002638F2 /* GTMMIMEDocument.m in Sources */,
+				94375E441DC94A3D002638F2 /* GTLRPlayersQuery.m in Sources */,
+				94375EBC1DC94D23002638F2 /* GTLRBatchResult.m in Sources */,
+				94375E8C1DC94D0E002638F2 /* GTMGatherInputStream.m in Sources */,
+				94375DB71DC93C00002638F2 /* HomePageViewController.swift in Sources */,
+				94375EC41DC94D23002638F2 /* GTLRUploadParameters.m in Sources */,
+				94375EBA1DC94D23002638F2 /* GTLRTestService.m in Sources */,
+				94375E911DC94D0E002638F2 /* GTMSessionFetcherLogViewController.m in Sources */,
 				94375DB51DC93C00002638F2 /* AppDelegate.swift in Sources */,
+				94375EC61DC94D23002638F2 /* GTLRFramework.m in Sources */,
+				94035E6C1DCC538000EC3568 /* ViewController.swift in Sources */,
+				94375E8E1DC94D0E002638F2 /* GTMReadMonitorInputStream.m in Sources */,
+				94375EC51DC94D23002638F2 /* GTLRBase64.m in Sources */,
+				94375E431DC94A3D002638F2 /* GTLRPlayersObjects.m in Sources */,
+				94375E8F1DC94D0E002638F2 /* GTMSessionFetcher.m in Sources */,
+				94375EC11DC94D23002638F2 /* GTLRQuery.m in Sources */,
+				94375ED81DCA86BA002638F2 /* Player.swift in Sources */,
+				94375EC31DC94D23002638F2 /* GTLRService.m in Sources */,
+				94375EC01DC94D23002638F2 /* GTLRObject.m in Sources */,
+				94375EB91DC94D23002638F2 /* GTLRTestQuery.m in Sources */,
+				94375E921DC94D0E002638F2 /* GTMSessionFetcherService.m in Sources */,
+				94375E931DC94D0E002638F2 /* GTMSessionUploadFetcher.m in Sources */,
+				94375EC21DC94D23002638F2 /* GTLRRuntimeCommon.m in Sources */,
+				94375EB81DC94D23002638F2 /* GTLRTestObjects.m in Sources */,
+				94375EBD1DC94D23002638F2 /* GTLRDateTime.m in Sources */,
+				94375EBB1DC94D23002638F2 /* GTLRBatchQuery.m in Sources */,
+				94375ED61DCA7F1E002638F2 /* PlayersTableViewController.swift in Sources */,
+				94375EC71DC94D23002638F2 /* GTLRURITemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +619,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FantasyFootballApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FantasyFootballApp/FantasyFootballApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -411,10 +634,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FantasyFootballApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FantasyFootballApp/FantasyFootballApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -426,6 +652,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyFootballApp.app/FantasyFootballApp";
 			};
 			name = Debug;
@@ -438,6 +665,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyFootballApp.app/FantasyFootballApp";
 			};
 			name = Release;
@@ -449,6 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FantasyFootballApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -461,6 +690,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apemonkey.FantasyFootballAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FantasyFootballApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,6 +715,7 @@
 				94375DDB1DC93C02002638F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94375DDC1DC93C02002638F2 /* Build configuration list for PBXNativeTarget "FantasyFootballAppTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +724,7 @@
 				94375DDE1DC93C02002638F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94375DDF1DC93C02002638F2 /* Build configuration list for PBXNativeTarget "FantasyFootballAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +733,7 @@
 				94375DE11DC93C02002638F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
