@@ -7,53 +7,81 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 let isLocalHostTesting = false
 let localHostURL = "http://localhost:8080/_ah/api/"
 
+var service : GTLRPlayersService{
+    if _service != nil{
+        return _service!
+    }
+    _service = GTLRPlayersService()
+    
+    //SETUP
+    
+    if isLocalHostTesting{
+        _service?.rootURLString = localHostURL
+        _service?.fetcherService.allowLocalhostRequest = true
+    }
+    _service?.isRetryEnabled = true
+    return _service!
+    
+}
+
+var _service : GTLRPlayersService?
+
 class PlayersTableViewController: UITableViewController {
 
     let playerCellIdentifier = "PlayerCell"
-    
-    let names = ["Ryan","Tyler","Megan"]
+    let showDetailSegueIdentifier = "ShowDetailSegue"
     
     var players = [GTLRPlayers_MainAPIPlayer]()
     
-    var service : GTLRPlayersService{
-        if _service != nil{
-            return _service!
-        }
-        _service = GTLRPlayersService()
-    
-        //SETUP
-        
-        if isLocalHostTesting{
-            _service?.rootURLString = localHostURL
-            _service?.fetcherService.allowLocalhostRequest = true
-        }
-        _service?.isRetryEnabled = true
-        return _service!
-        
-    }
-    
-    var _service : GTLRPlayersService?
-    
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+        self.navigationItem.leftBarButtonItem = editButtonItem
+        //var toolBarItems = NSMutableArray()
+        let systemButton1 = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(PlayersTableViewController.goBackToHomePage))
+        //toolBarItems.add(systemButton1)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(PlayersTableViewController.showAddPlayerDialog))
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(PlayersTableViewController.goBackToHomePage))
-        
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(PlayersTableViewController.goBackToHomePage))
+        self.navigationController?.setToolbarHidden(false, animated: true)
+        self.setToolbarItems([systemButton1], animated: true)
         _queryForPlayers()
-        
-        //players.append(Player(name: "Ryan Jones", position: "QB"))
-        
-        //players.append(Player(name: "Mel Chesnutis", position: "RB"))
+
     }
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-        //_queryForPlayers()
+        tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            
+            let playerToDelete = players[indexPath.row]
+            _deletePlayer(playerToDelete: playerToDelete.name!)
+            
+            players.remove(at: indexPath.row)
+            if players.count == 0{
+                tableView.reloadData()
+            }else {
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        } else if editingStyle == .insert{
+            //could do insert here
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == showDetailSegueIdentifier{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let playerClicked = players[indexPath.row]
+                (segue.destination as! PlayersDetailViewController).player = playerClicked
+            }
+        }
     }
     
     func goBackToHomePage(){
@@ -88,6 +116,7 @@ class PlayersTableViewController: UITableViewController {
             let player = GTLRPlayers_MainAPIPlayer()
             player.name = nameTextField.text!
             player.position = positionTextField.text!
+            player.userID = FBSDKAccessToken.current().userID
             
             //Send player to backend
             self._insertPlayers(player)
@@ -132,7 +161,7 @@ class PlayersTableViewController: UITableViewController {
     
     func _queryForPlayers(){
         let query : GTLRPlayersQuery_PlayerList = GTLRPlayersQuery_PlayerList.query()
-        //query.order = "-last_touch_date_time"
+        query.userID = FBSDKAccessToken.current().userID
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         service.executeQuery(query) { (ticket, response, error) -> Void in
@@ -167,6 +196,20 @@ class PlayersTableViewController: UITableViewController {
             //TODO: need to use returnedPlayer to set the entityKey on the backend for Update and Delete
             
         }
+    }
+    
+    func _deletePlayer(playerToDelete : String){
+        let query : GTLRPlayersQuery_PlayerDelete = GTLRPlayersQuery_PlayerDelete.query()
+        query.name = playerToDelete
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        service.executeQuery(query) { (ticket, response, error) -> Void in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            if error != nil{
+                self._showErrorDialog(error! as NSError)
+                return
+            }
+        }
+        
     }
     
     
